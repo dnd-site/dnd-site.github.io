@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOLA SARA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/snackbar.css" />
+<link rel="stylesheet" type="text/css" href="css/topnav.css" />
+<link rel="stylesheet" type="text/css" href="css/hr.css" />
+<link rel="stylesheet" type="text/css" href="css/offcanvas.css" />
+
+<!--BOOTSTRAP -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+</head>
+<body>
+  <!-- <script src="js/index_pass.js"></script>-->
+
+<!--
+-->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+<a class="navbar-brand mr-auto mr-lg-0" href="index.html">Buscar palabra o expresi&oacute;n</a>
+<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="navbar-collapse offcanvas-collapse" >
+
+<ul class="navbar-nav mr-auto" align="center">
+  <li class="nav-item">
+    <a class="nav-link" href="colores.html">Colores</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="numeros.html">Numeros</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="calendario.html">Calendario</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="letras.html">Abecedario</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="ropa.html">Ropa</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="cuerpo.html">Cuerpo</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="animales.html">Animales</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="estaciones.html">Estaciones</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="adj.html">Adjetivos</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="familia.html">Familia</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="rasgos.html">Rasgos</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="verbos.html">Verbos</a>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Otros</a>
+    <div class="dropdown-menu" aria-labelledby="dropdown01">
+      <a class="dropdown-item" href="#">En desarrollo</a>
+      <a class="dropdown-item" href="#"></a>
+      <a class="dropdown-item" href="#"></a>
+    </div>
+  </li>
+</ul>
+</div>
+</nav>
+<h6 align="center"> * Todas las pablabras en español están escritas sin tildes </h6>
+<!--
+-->
+
+<div class="topnav">
+  <div id="mySeach">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar en Espa&ntilde;ol ..." onclick="snackbar()">
+      <input type="text"  id="myInput1" onkeyup="myFunction1()" placeholder="Buscar en B&uacute;lgaro ..." >
+      <div id="snackbar">Vas a buscar en ESPAÑOL</div>
+    </div>
+</div>
+<!--<input type="text"  id="myInput2" onkeyup="myFunction2()" placeholder="Buscar en B&uacute;lgaro escrito ...">-->
+
+<div class="nav-scroller bg-white shadow-sm">
+  <nav class="nav nav-underline">
+    <a class="nav-link active" href="index.html">Home</a>
+    <a class="nav-link" href="colores.html">Colores
+    </a>
+    <a class="nav-link" href="numeros.html">Numeros
+      <span class="badge badge-pill bg-light align-text-bottom">100</span>
+    </a>
+    <a class="nav-link" href="calendario.html">Calendario</a>
+    <a class="nav-link" href="letras.html">Abecedario</a>
+    <a class="nav-link" href="ropa.html">Ropa</a>
+    <a class="nav-link" href="cuerpo.html">Cuerpo</a>
+    <a class="nav-link" href="animales.html">Animales</a>
+    <a class="nav-link" href="estaciones.html">Estaciones</a>
+    <a class="nav-link" href="adj.html">Adjetivos</a>
+    <a class="nav-link" href="familia.html">Familia</a>
+    <a class="nav-link" href="rasgos.html">Rasgos</a>
+    <a class="nav-link" href="verbos.html">Verbos</a>
+  </nav>
+</div>
+<!--////////////////////////////////////////////////////////////-->
+<br>
+<div id="mySidenav" class="sidenav">
+  <div id="myBtnContainer" align="center">
+    <button class="btn" onclick="sortTable(0,'str')" >Ordenar Español</button>
+    <button class="btn" onclick="sortTable(1,'str')" >Ordenar Búlgaro</button>
+  </div>
+</div>
+<br>
+<table id="myTable">
+  <tr class="header">
+    <th style="width:33%;">Español</th>
+    <th style="width:33%;">Búlgaro</th>
+    <th style="width:33%;">Búlgaro (escrito)</th>
+
+    <tr><td>Hola</td><td>Zdravei</td><td>Здравей</td></tr>
+    <tr><td>Como estas ?</td><td>Kak si ?</td><td>Как си ?</td></tr>
+    <tr><td>Corazon mio</td><td>Sarce moe</td><td>Сърце мое</td></tr>
+    <tr><td>Que haces ?</td><td>Kakvo pravish</td><td>Какво правиш</td></tr>
+    <tr><td>Te quiero</td><td>Obicham te</td><td>Обичам те</td></tr>
+    <tr><td>Te quiero amor mio</td><td>Obicham te lуubov moya</td><td>Обичам те любов моя</td></tr>
+    <tr><td>Estoy en casa</td><td>Vav kashti sam</td><td>Във къщи сам</td></tr>
+    <tr><td>Que vale ?</td><td>Kolko struva ?</td><td>Колко струва ?</td></tr>
+    <tr><td>Buenos dias</td><td>Dobro utro</td><td>Добро утро</td></tr>
+    <tr><td>Buenas Noches</td><td>Leka nosht</td><td>Лека нощ</td></tr>
+    <tr><td>Como te llamas ?</td><td>Kak se kazvash ?</td><td>Как се казваш ?</td></tr>
+    <tr><td>Tengo hambre</td><td>Gladen sam</td><td>Гладен съм</td></tr>
+    <tr><td>Quiero ir al baño</td><td>Iskam da otida do toaletna</td><td>Искам да отида до тоалетна</td></tr>
+    <tr><td>Quiero</td><td>Iskam</td><td>Искам</td></tr>
+    <tr><td>Ir</td><td>Otida</td><td>Отида</td></tr>
+    <tr><td>Porque ?</td><td>Zashto ?</td><td>Защо</td></tr>
+    <tr><td>Mañana</td><td>Utre</td><td>Утре</td></tr>
+    <tr><td>Casi</td><td>Pochti</td><td>Почти</td></tr>
+    <tr><td>Pues a dormir</td><td>Togava da spish</td><td>Тогава да спиш</td></tr>
+    <tr><td>Dormir</td><td>Spish</td><td>Спиш</td></tr>
+    <tr><td>Denada</td><td>Za nishto</td><td>За нищо</td></tr>
+    <tr><td>Descansa</td><td>Pochivai</td><td>Почивай</td></tr>
+    <tr><td>Sueña</td><td>Sanuvai</td><td>Сънувай</td></tr>
+    <tr><td>Descansa y sueña cosas bonitas</td><td>Pochivai i sanuvai krasivi neshta</td><td>Почивай и сънувай красиви неща</td></tr>
+    <tr><td>Te quiero mucho</td><td>Obicham te mnogo</td><td>Обичам те много</td></tr>
+    <tr><td>Como has dormido ?</td><td>Kak spa ?</td><td>Как спа ?</td></tr>
+    <tr><td>Caballo</td><td>Kon</td><td>Kон</td></tr>
+    <tr><td>Toro</td><td>Bik</td><td>бик</td></tr>
+    <tr><td>Dinero</td><td>Pari</td><td>Пари</td></tr>
+    <tr><td>Precio</td><td>Tsena</td><td>Цена</td></tr>
+    <tr><td>Padre</td><td>Bashta|Tatko</td><td>Баща|Татко</td></tr>
+    <tr><td>Madre</td><td>Maika</td><td>Майка</td></tr>
+    <tr><td>Llave</td><td>Kluch</td><td>Ключ</td></tr>
+    <tr><td>Sangre</td><td>Krav</td><td>Кръв</td></tr>
+    <tr><td>Gripe</td><td>Grip</td><td>Грип</td></tr>
+    <tr><td>Pan</td><td>Khlyab</td><td>Хляб</td></tr>
+    <tr><td>Direccion</td><td>Adres</td><td>Адрес</td></tr>
+    <tr><td>Perro</td><td>Kuche</td><td>Куче</td></tr>
+    <tr><td>Gato</td><td>Kotka</td><td>Котка</td></tr>
+    <tr><td>Pez</td><td>Riba</td><td>Риба</td></tr>
+    <tr><td>Leon</td><td>Lav</td><td>Лъв</td></tr>
+    <tr><td>Dia</td><td>Den</td><td>Ден</td></tr>
+    <tr><td>Semana</td><td>Sedmitsa</td><td>Седмица</td></tr>
+    <tr><td>Mes</td><td>Mesets</td><td>Месец</td></tr>
+    <tr><td>Año</td><td>Godina</td><td>Година</td></tr>
+    <tr><td>Feliz</td><td>Shtastliv</td><td>Щастлив</td></tr>
+    <tr><td>Contento</td><td>Shtastliv</td><td>Щастлив</td></tr>
+    <tr><td>Enhorabuena</td><td>Chestito</td><td>Честито</td></tr>
+    <tr><td>Felicidades</td><td>Chestito</td><td>Честито</td></tr>
+    <tr><td>Feliz cumpleaños</td><td>Chestit Rozhden Den</td><td>Честит Рожден Ден</td></tr>
+    <tr><td>Universidad</td><td>Universitet</td><td>Университет</td></tr>
+    <tr><td>Clase</td><td>Klas</td><td>Клас</td></tr>
+    <tr><td>Pareja</td><td>Dvoika</td><td>Двойка</td></tr>
+    <tr><td>Amigo</td><td>Priatel</td><td>Приятел</td></tr>
+    <tr><td>Amiga</td><td>Priatelka</td><td>Приятелка</td></tr>
+    <tr><td>Amigos</td><td>Priateli</td><td>Приятели</td></tr>
+    <tr><td>Amigas</td><td>Priatelki</td><td>Приятелки</td></tr>
+    <tr><td>Buena suerte</td><td>Dobar kasmet</td><td>Добър късмет</td></tr>
+    <tr><td>Me llamo</td><td>Kazvam se</td><td>Казвам се</td></tr>
+    <tr><td>Tengo X años</td><td>Imam x godini</td><td>Имам x години</td></tr>
+    <tr><td>Vivo en</td><td>Zhiveia v</td><td>Живея в</td></tr>
+    <tr><td>Soy de</td><td>Az sam ot</td><td>Аз съм от</td></tr>
+    <tr><td>Me gusta</td><td>Xaresva mi</td><td>Харесва ми</td></tr>
+    <tr><td>Musica</td><td>Muzika</td><td>Музика</td></tr>
+    <tr><td>Coche</td><td>Kola</td><td>Кола</td></tr>
+    <tr><td>Moto</td><td>Motor</td><td>Мотор</td></tr>
+    <tr><td>Avion</td><td>Samolet</td><td>Самолет</td></tr>
+    <tr><td>Barco</td><td>Korab</td><td>Кораб</td></tr>
+    <tr><td>Bicicleta</td><td>Kolelo</td><td>Колело</td></tr>
+    <tr><td>Agua</td><td>Voda</td><td>Вода</td></tr>
+    <tr><td>Comida</td><td>Xrana</td><td>Храна</td></tr>
+    <tr><td>Hermana</td><td>Sestra</td><td>Сестра</td></tr>
+    <tr><td>Hermano</td><td>Brat</td><td>Брат</td></tr>
+    <tr><td>Tia (Padre)</td><td>Strinka</td><td>Стринка</td></tr>
+    <tr><td>Tio (Padre)</td><td>Chicho</td><td>Чичо</td></tr>
+    <tr><td>Tia (Madre)</td><td>Vuina</td><td>Вуйна</td></tr>
+    <tr><td>Tio (Madre)</td><td>Vuicho</td><td>Вуйчо</td></tr>
+    <tr><td>Abuela</td><td>Baba</td><td>Баба</td></tr>
+    <tr><td>Abuelo</td><td>Diado</td><td>Дядо</td></tr>
+    <tr><td>Hijo</td><td>Sin</td><td>Син</td></tr>
+    <tr><td>Hija</td><td>Dashteria</td><td>Дъщеря</td></tr>
+    <tr><td>Bebe</td><td>Bebe</td><td>Бебе</td></tr>
+    <tr><td>Animales</td><td>Zhivotni</td><td>Животни</td></tr>
+    <tr><td>Animal</td><td>Zhivotno</td><td>Животно</td></tr>
+    <tr><td>Movil</td><td>Telefon</td><td>Телефон</td></tr>
+    <tr><td>Encantada de conocerte</td><td>Priatno mi e da se zapoznaem</td><td>Приятно ми е да се запознаем</td></tr>
+    <tr><td>Yo</td><td>Az</td><td>Аз</td></tr>
+    <tr><td>Tu</td><td>Ti</td><td>Ти</td></tr>
+    <tr><td>El</td><td>Toi</td><td>Той</td></tr>
+    <tr><td>Ella</td><td>Tya</td><td>Тя</td></tr>
+    <tr><td>Nosotros</td><td>Nie</td><td>Ние</td></tr>
+    <tr><td>Vosotros</td><td>Vie</td><td>Вие</td></tr>
+    <tr><td>Ellos</td><td>Te</td><td>Те</td></tr>
+    <tr><td>Mi</td><td>Moita</td><td>Мойта</td></tr>
+    <tr><td>Tuya</td><td>Tvoita</td><td>Твойта</td></tr>
+    <tr><td>Su</td><td>Negovata</td><td>Неговата</td></tr>
+    <tr><td>Casa</td><td>Kashta</td><td>Къща</td></tr>
+    <tr><td>Bien</td><td>Dobre</td><td>Добре</td></tr>
+    <tr><td>Mal</td><td>Zle</td><td>Зле</td></tr>
+    <tr><td>Aproximadamente</td><td>Priblizitelno</td><td>Приблизително</td></tr>
+    <tr><td>Raro</td><td>Riadko</td><td>Рядко</td></tr>
+    <tr><td>Normal</td><td>Normalno</td><td>Нормално</td></tr>
+    <tr><td>Pelota</td><td>Topka</td><td>Топка</td></tr>
+    <tr><td>Nada</td><td>Nishto</td><td>Нищо</td></tr>
+    <tr><td>Todo</td><td>Vsichko</td><td>Всичко</td></tr>
+    <tr><td>Gracias</td><td>Blagodarya</td><td>Благодаря</td></tr>
+    <tr><td>Pronto</td><td>Skoro</td><td>Скоро</td></tr>
+    <tr><td>Tarde</td><td>Sled obyat</td><td>След Обяд</td></tr>
+    <tr><td>Si</td><td>Da</td><td>Да</td></tr>
+    <tr><td>No</td><td>Ne</td><td>Не</td></tr>
+    <tr><td>Ahora</td><td>Sega</td><td>Сега</td></tr>
+    <tr><td>Nunca</td><td>Nikoga</td><td>Никога</td></tr>
+    <tr><td>Cuando</td><td>Koga</td><td>Кога</td></tr>
+    <tr><td>Donde</td><td>Kade</td><td>Къде</td></tr>
+    <tr><td>Cuanto cuesta?</td><td>Kolko struva ?</td><td>Колко струва ?</td></tr>
+    <tr><td>Que hora es?</td><td>Kolko chasa e ?</td><td>Колко часа е ?</td></tr>
+
+
+</table>
+
+<script src="js/index.js"></script>
+<script src="js/offcanvas.js"></script>
+<script src="js/short.js"></script>
+<script src="js/snackbar.js"></script>
+<script>
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i <= btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<hr class="new5"></hr>
+<div align="center">
+  <p>Diccionario Búlgaro-Español &copy;2020</p>
+</div>
+</body>
+</html>

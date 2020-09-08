@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOLA SARA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/calendario.css" />
+<link rel="stylesheet" type="text/css" href="css/hr.css" />
+<link rel="stylesheet" type="text/css" href="css/offcanvas.css" />
+
+<!--BOOTSTRAP -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+</head>
+<body>
+
+<!--
+-->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+<a class="navbar-brand mr-auto mr-lg-0" href="index.html">Diccionario</a>
+<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="navbar-collapse offcanvas-collapse" >
+
+<ul class="navbar-nav mr-auto" align="center">
+  <li class="nav-item">
+    <a class="nav-link" href="colores.html">Colores</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="numeros.html">Numeros</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="letras.html">Abecedario</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="ropa.html">Ropa</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="cuerpo.html">Cuerpo</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="animales.html">Animales</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="estaciones.html">Estaciones</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="adj.html">Adjetivos</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="familia.html">Familia</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="rasgos.html">Rasgos</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="verbos.html">Verbos</a>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Otros</a>
+    <div class="dropdown-menu" aria-labelledby="dropdown01">
+      <a class="dropdown-item" href="#">En desarrollo</a>
+      <a class="dropdown-item" href="#"></a>
+      <a class="dropdown-item" href="#"></a>
+    </div>
+  </li>
+</ul>
+</div>
+</nav>
+<!--
+-->
+
+<div class="nav-scroller bg-white shadow-sm">
+  <nav class="nav nav-underline">
+    <a class="nav-link active" href="calendario.html">Calendario</a>
+    <a class="nav-link" href="colores.html">Colores</a>
+    <a class="nav-link" href="numeros.html">Numeros
+      <span class="badge badge-pill bg-light align-text-bottom">100</span>
+    </a>
+    <a class="nav-link" href="letras.html">Abecedario</a>
+    <a class="nav-link" href="ropa.html">Ropa</a>
+    <a class="nav-link" href="cuerpo.html">Cuerpo</a>
+    <a class="nav-link" href="animales.html">Animales</a>
+    <a class="nav-link" href="estaciones.html">Estaciones</a>
+    <a class="nav-link" href="adj.html">Adjetivos</a>
+    <a class="nav-link" href="familia.html">Familia</a>
+    <a class="nav-link" href="rasgos.html">Rasgos</a>
+    <a class="nav-link" href="verbos.html">Verbos</a>
+  </nav>
+</div>
+<!--////////////////////////////////////////////////////////////-->
+<br>
+<button class="tablink" onclick="openPage('Dias', this, 'Red')">Días</button>
+<button class="tablink" onclick="openPage('Meses', this, 'Red')">Meses</button>
+<button class="tablink" onclick="openPage('Horas', this, 'Red')">Horas</button>
+
+<div id="Dias" class="tabcontent" >
+  <table >
+    <tr align="center">
+      <th>Español</th>
+      <th>Búlgaro</th>
+    </tr>
+        <tr>
+          <td>Lunes</td>
+          <td>Ponedelnik</td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td>Vtornik</td>
+        </tr>
+        <tr>
+          <td>Miercoles</td>
+          <td>Sriada</td>
+        </tr>
+        <tr>
+          <td>Jueves</td>
+          <td>Chetvartak</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>Petak</td>
+        </tr>
+        <tr>
+          <td>Sabado</td>
+          <td>Sabota</td>
+        </tr>
+        <tr>
+          <td>Domingo</td>
+          <td>Nedelia</td>
+        </tr>
+  </table>
+</div>
+
+<div id="Meses" class="tabcontent">
+  <table>
+    <tr align="center">
+      <th>Español</th>
+      <th>Búlgaro</th>
+    </tr>
+        <tr>
+          <td>Enero</td>
+          <td>Enuari</td>
+        </tr>
+        <tr>
+          <td>Febrero</td>
+          <td>Fevruari</td>
+        </tr>
+        <tr>
+          <td>Marzo</td>
+          <td>Mart</td>
+        </tr>
+        <tr>
+          <td>Abril</td>
+          <td>April</td>
+        </tr>
+        <tr>
+          <td>Mayo</td>
+          <td>Mai</td>
+        </tr>
+        <tr>
+          <td>Junio</td>
+          <td>Yuni</td>
+        </tr>
+        <tr>
+          <td>Julio</td>
+          <td>Yuli</td>
+        </tr>
+        <tr>
+          <td>Agosto</td>
+          <td>Avgost</td>
+        </tr>
+        <tr>
+          <td>Septiembre</td>
+          <td>Septemvri</td>
+        </tr>
+        <tr>
+          <td>Octubre</td>
+          <td>Oktomvri</td>
+        </tr>
+        <tr>
+          <td>Noviembre</td>
+          <td>Noemvri</td>
+        </tr>
+        <tr>
+          <td>Diciembre</td>
+          <td>Dekemvri</td>
+        </tr>
+  </table>
+</div>
+
+<div id="Horas" class="tabcontent" >
+
+  <table>
+    <tr align="center">
+      <th>Hora</th>
+      <th>Bulgaro</th>
+      <th>Minutos</th>
+      <th>Bulgaro</th>
+    </tr>
+    <tr>
+      <td>01:00</td>
+      <td>Edin "chasa"</td>
+      <td>1:05</td>
+      <td>i Pet</td>
+    </tr>
+    <tr>
+      <td>02:00</td>
+      <td>Dva "chasa"</td>
+      <td>2:10</td>
+      <td>i Deset</td>
+    </tr>
+    <tr>
+      <td>03:00</td>
+      <td>Tri "chasa"</td>
+      <td>3:15</td>
+      <td>i Petnaiset</td>
+    </tr>
+    <tr>
+      <td>04:00</td>
+      <td>Chetri "chasa"</td>
+      <td>4:20</td>
+      <td>i Dvaiset</td>
+    </tr>
+    <tr>
+      <td>05:00</td>
+      <td>Pet "chasa"</td>
+      <td>5:25</td>
+      <td>i Dvaiset i pet</td>
+    </tr>
+    <tr>
+      <td>06:00</td>
+      <td>Shest "chasa"</td>
+      <td>6:30</td>
+      <td>i Polovina</td>
+    </tr>
+    <tr>
+      <td>07:00</td>
+      <td >Sedem "chasa"</td>
+      <td>7:35</td>
+      <td>i Triiset i pet </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>7:35</td>
+      <td>Osem bez dvaiset i pet</td>
+    </tr>
+    <tr>
+      <td>08:00</td>
+      <td>Osem "chasa"</td>
+      <td>8:40</td>
+      <td>i Chetirset</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8:40</td>
+      <td>Devet bez dvaiset</td>
+    </tr>
+    <tr>
+      <td>09:00</td>
+      <td>Devet "chasa"</td>
+      <td>9:45</td>
+      <td>i chetirset i pet</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>9:45</td>
+      <td>deset bez petnaiset</td>
+    </tr>
+    <tr>
+      <td>10:00</td>
+      <td>Deset "chasa"</td>
+      <td>10:50</td>
+      <td>i pedeset</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10:50</td>
+      <td>idenaiset bez deset</td>
+    </tr>
+    <tr>
+      <td>11:00</td>
+      <td>Idenaiset "chasa"</td>
+      <td>11:55</td>
+      <td>i pedeset i pet</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11:55</td>
+      <td>Dvanaiset bez pet</td>
+    </tr>
+    <tr>
+      <td>12:00</td>
+      <td>Dvanaiset "chasa"</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+</table>
+</div>
+
+</div>
+
+
+<script src="js/offcanvas.js"></script>
+<script src="js/calendario.js"></script>
+
+<hr class="new5"></hr>
+<div align="center">
+  <p>Diccionario Búlgaro-Español &copy;2020</p>
+</div>
+</body>
+</html>
