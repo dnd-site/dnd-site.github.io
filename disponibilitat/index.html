@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html>
-<title>Disponibilidad</title>
+<title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body class="w3-theme-l4">
 
-<body >
+<div style="min-width:400px">
 
-<header class="w3-container w3-card-4 w3-theme" align="center">
-  <h3 >Semana 41 | <i>5.sep - 12.sep</i></h3>
-  <!--<script src="index_pass.js"></script>-->
-  <section>
-    <p>
-        <span id="days"></span> días | <span id="hours"></span> horas | <span id="minutes"></span> minutos | <span id="seconds"></span> segundos
-    </p>
-</section>
-<script>
-// VARIABLES
-//===
-const DATE_TARGET = new Date('10/13/2020 0:01 AM');
-// DOM for render
-const SPAN_DAYS = document.querySelector('span#days');
-const SPAN_HOURS = document.querySelector('span#hours');
-const SPAN_MINUTES = document.querySelector('span#minutes');
-const SPAN_SECONDS = document.querySelector('span#seconds');
-// Milliseconds for the calculations
-const MILLISECONDS_OF_A_SECOND = 1000;
-const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
-const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
-const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
-
-function updateCountdown() {
-    const NOW = new Date()
-    const DURATION = DATE_TARGET - NOW;
-    const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
-    const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
-    const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
-    const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
-
-    SPAN_DAYS.textContent = REMAINING_DAYS;
-    SPAN_HOURS.textContent = REMAINING_HOURS;
-    SPAN_MINUTES.textContent = REMAINING_MINUTES;
-    SPAN_SECONDS.textContent = REMAINING_SECONDS;
-}
-
-updateCountdown();
-setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
-</script>
-</header>
+      <div class="w3-bar w3-large w3-theme-d4" >
+        <span class="w3-bar-item">FORMULARIOS</span>
+      </div>
 
 
+  <div class="w3-container w3-content w3-animate-zoom">
+          <div>
+          <p class="w3-opacity"><b>ACTIVOS</b></p>
 
-  <div width="100%" height="100%" >
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7nThN9iSbVQUeBbLlDPn8Z9GRbdJDZJxNLmAXoALSqCdTMg/viewform?embedded=true" width="100%" height="1500" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                 <div class="w3-panel w3-white w3-card w3-display-container">
+                   <p class="w3-text-blue"><b>Disponibilidad 41</b></p>
+                   <a href="s41.html"><button  class="w3-btn w3-white w3-border w3-border-red w3-round-large">CONTESTAR FORMULARIO</button></a>
+                   <p></p>
+                 </div>
+          </div>
+          <div>
+          <p class="w3-opacity"><b>PRÓXIMOS</b></p>
+
+               <div class="w3-panel w3-white w3-card w3-display-container">
+                 <p class="w3-text-blue" ><b>Disponibilidad 42</b></p>
+                 <button disabled href="index.html" class="w3-btn w3-white w3-border w3-border-red w3-round-large">CONTESTAR FORMULARIO</button>
+                 <p></p>
+               </div>
+
+               <div class="w3-panel w3-white w3-card w3-display-container">
+                 <p class="w3-text-blue" ><b>Disponibilidad 43</b></p>
+                 <button disabled href="index.html" class="w3-btn w3-white w3-border w3-border-red w3-round-large">CONTESTAR FORMULARIO</button>
+                 <p></p>
+               </div>
+
+            </div>
+
+
+  </div>
+
 </div>
-<hr>
-
-
-<footer class="w3-container w3-theme-l2" style="position:relative">
-  <p>&copy 2020</p>
-</footer>
-
-<!--<div class="w3-container w3-theme-dark w3-xxxlarge">
-  «
-  <span class="w3-right">
-  »
-</span></div>-->
 
 </body>
 </html>
