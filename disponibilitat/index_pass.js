@@ -1,6 +1,13 @@
 var contra ="alcoy.pruebas";
-    contra = prompt("TODAVIA NO ESTÁ DISPONIBLE. SI ERES PROPIETARIO INTRODUCE CONTRASEÑA");
-if(contra =="alcoy.pruebas"){
+var prueba ="prueba";
+    contra = prompt("Introduce tu contraseña de autentificación");
+if(contra =="alcoy.pruebas"
+  ||  prueba ="prueba"
+
+
+
+
+){
   document.white("Redireccionando ...");
 var pagina = "index.html";
   function redirecionar(){
