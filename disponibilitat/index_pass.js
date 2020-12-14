@@ -1,13 +1,6 @@
 var contra ="alcoy.pruebas";
-var prueba ="prueba";
     contra = prompt("Introduce tu contraseña de autentificación");
-if(contra =="alcoy.pruebas"
-  ||  prueba ="prueba"
-
-
-
-
-){
+if(contra =="alcoy.pruebas"){
   document.white("Redireccionando ...");
 var pagina = "index.html";
   function redirecionar(){
